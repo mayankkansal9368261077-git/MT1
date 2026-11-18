@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book details | Library Management System</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Library Management System</a>
+    <nav><a href="/">All books</a></nav>
+  </header>
+  <main class="single-column">
+    <a class="back-link" href="/"> Back to all books</a>
+    <section class="panel">
+      <h1>Book details</h1>
+      <p id="status" class="status" role="status"></p>
+      <div id="book-detail"></div>
+      <form id="book-form" class="hidden">
+        <label>Title <input name="title" required maxlength="200"></label>
+        <label>Author <input name="author" required maxlength="200"></label>
+        <label>Category <input name="category" required maxlength="100"></label>
+        <button type="submit">Save changes</button>
+        <button type="button" class="secondary" id="cancel-edit">Cancel</button>
+      </form>
+      <div id="book-actions" class="actions hidden">
+        <button type="button" id="edit-book">Edit book</button>
+        <button type="button" class="danger" id="delete-book">Delete book</button>
+      </div>
+    </section>
+  </main>
+  <script src="/script.js" defer></script>
+</body>
+</html>
